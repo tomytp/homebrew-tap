@@ -5,20 +5,20 @@
 class PucCompanion < Formula
   desc "Competitive programming companion CLI"
   homepage "https://github.com/tomytp/icpc-companion"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tomytp/icpc-companion/releases/download/v1.0.0/puc-companion_1.0.0_darwin_amd64.tar.gz"
-      sha256 "e3da2c8f9682a286e87498d8a7e98dfe426eded5ae54f0fdb149ef2d0f775107"
+      url "https://github.com/tomytp/icpc-companion/releases/download/v1.0.1/puc-companion_1.0.1_darwin_amd64.tar.gz"
+      sha256 "d8414478a7a931411cd8f66098d84844fc5a23ba8a0c6e8db68eaebc8fe42229"
 
       def install
         bin.install "comp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tomytp/icpc-companion/releases/download/v1.0.0/puc-companion_1.0.0_darwin_arm64.tar.gz"
-      sha256 "99ba87f0257bed228295b0758a1413600a4f9cc92e050773cd7f3b46a52e6da8"
+      url "https://github.com/tomytp/icpc-companion/releases/download/v1.0.1/puc-companion_1.0.1_darwin_arm64.tar.gz"
+      sha256 "262ccfcb4cb606e0371a153b45f91f32a7eba681458ed11892afdad418d360f5"
 
       def install
         bin.install "comp"
@@ -28,15 +28,15 @@ class PucCompanion < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomytp/icpc-companion/releases/download/v1.0.0/puc-companion_1.0.0_linux_amd64.tar.gz"
-      sha256 "325412f3b8348bc93d7cbb9f6d1b8e42f6d48188af98b4d6affab59855955aa1"
+      url "https://github.com/tomytp/icpc-companion/releases/download/v1.0.1/puc-companion_1.0.1_linux_amd64.tar.gz"
+      sha256 "2d8af263bb5bea1897b4c7c1293a12d372948fa4445bf61201d8b3f7d5efa753"
       def install
         bin.install "comp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomytp/icpc-companion/releases/download/v1.0.0/puc-companion_1.0.0_linux_arm64.tar.gz"
-      sha256 "b153d3b6e8f2cc713cfd11ea85aac8ba86edb418d7c6a578b54dbdb3e8c43761"
+      url "https://github.com/tomytp/icpc-companion/releases/download/v1.0.1/puc-companion_1.0.1_linux_arm64.tar.gz"
+      sha256 "2281645c7d126d824a1ebe642561500118e43ddc93e09c313c750071ee56a9f8"
       def install
         bin.install "comp"
       end
